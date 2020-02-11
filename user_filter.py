@@ -1,11 +1,8 @@
 import madgraph.various.misc as misc
 
 def remove_diag(diag):
-    """force to have two s-channel W decaying into a specific way. 
-       Designed for interference studies where decay chain are not allowed
-       This is designed for keeping the following diagram generate p p > j j w- w-, w- > e- ve~ 
-       from the following syntax:  p p > j j e- ve~ e- ve~
-"""
+    """force to have a top quark in the diagram
+    """
 
     found_top = False
     for vertex in diag['vertices']:
