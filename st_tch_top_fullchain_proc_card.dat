@@ -1,0 +1,10 @@
+import model sm-no_b_mass
+# import model dim6top_LO_UFO
+
+define p = p b b~
+define j = j b b~
+
+generate p p > b l+ vl j QCD=0 QED=4 --diagram_filter
+# generate p p > t j , (t > w+ b, w+ > l+ vl) $$ w+ w- 
+
+output st_tch_top_fullchain
